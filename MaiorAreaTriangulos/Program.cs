@@ -22,11 +22,8 @@ class Program
         y.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
         y.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
 
-        double xP = (x.A + x.B + x.C) / 2.0;
-        double yP = (y.A + y.B + y.C) / 2.0;
-
-        double xArea = Math.Sqrt(xP * (xP - x.A) * (xP - x.B ) * (xP - x.C));
-        double yArea = Math.Sqrt(yP * (yP - y.A) * (yP - y.B ) * (yP - y.C));
+        double xArea = x.Area();
+        double yArea = y.Area();
 
         Console.WriteLine("Área de X: " + xArea.ToString("F4", CultureInfo.InvariantCulture));
         Console.WriteLine("Área de Y: " + yArea.ToString("F4", CultureInfo.InvariantCulture));
@@ -42,4 +39,3 @@ class Program
         }
     }
 }
-
