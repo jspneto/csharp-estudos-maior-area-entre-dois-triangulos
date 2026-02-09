@@ -1,2 +1,37 @@
-# csharp-estudos-maior-area-entre-dois-triangulos
+# Maior Área Entre Dois Triângulos
+
 Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois triângulos** a partir das medidas de seus lados, utilizando a **fórmula de Heron**.
+
+Este projeto foi desenvolvido de forma incremental, registrando a evolução do código
+do estilo **procedural** até uma abordagem **orientada a objetos**.
+
+## Conceitos Trabalhados
+
+- Leitura de dados via console
+- Estruturação de código em C#
+- Introdução à Programação Orientada a Objetos
+- Criação de classes e métodos
+- Organização e versionamento com Git
+
+## Enunciado do Problema
+
+Ler as medidas dos lados de dois triângulos (X e Y), considerando medidas válidas.
+
+Em seguida:
+- Calcular a área de cada triângulo
+- Exibir os valores das áreas
+- Informar qual triângulo possui a maior área
+
+A área de um triângulo com lados `a`, `b` e `c` é calculada pela **fórmula de Heron**:
+
+```bash
+p = (a + b + c) / 2
+area = RaizQ(p * (p - a) * (p - b) * (p - c))
+```
+
+## Objetivo Educacional
+
+Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de
+aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
+
+Ele serve como material de consulta futura e base para exercícios mais complexos.
