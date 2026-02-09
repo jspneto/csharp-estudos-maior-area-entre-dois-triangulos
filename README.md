@@ -40,9 +40,15 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 
 *(A estrutura pode evoluir conforme o aprendizado avança.)*
 
+## Evolução do Projeto (Tags)
+
+- [**v0.1**][1] — Implementação totalmente procedural
+
 ## Objetivo Educacional
 
 Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de
 aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
 
 Ele serve como material de consulta futura e base para exercícios mais complexos.
+
+[1]: https://github.com/jspneto/csharp-estudos-maior-area-entre-dois-triangulos/tree/v0.1/MaiorAreaTriangulos "v0.1"
