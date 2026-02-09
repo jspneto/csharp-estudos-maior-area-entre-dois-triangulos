@@ -36,6 +36,7 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
    |- MaiorAreaTriangulos.csproj
    |- MaiorAreaTriangulos.sln
    |- Program.cs
+   |- Triângulo.cs
 ```
 
 *(A estrutura pode evoluir conforme o aprendizado avança.)*
