@@ -29,6 +29,17 @@ p = (a + b + c) / 2
 area = RaizQ(p * (p - a) * (p - b) * (p - c))
 ```
 
+## Estrutura do Projeto
+
+```bash
+|- MaiorAreaTriangulos
+   |- MaiorAreaTriangulos.csproj
+   |- MaiorAreaTriangulos.sln
+   |- Program.cs
+```
+
+*(A estrutura pode evoluir conforme o aprendizado avança.)*
+
 ## Objetivo Educacional
 
 Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de
