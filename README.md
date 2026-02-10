@@ -2,8 +2,7 @@
 
 Projeto de estudo em C# com o objetivo de **calcular e comparar a área de dois triângulos** a partir das medidas de seus lados, utilizando a **fórmula de Heron**.
 
-Este projeto foi desenvolvido de forma incremental, registrando a evolução do código
-do estilo **procedural** até uma abordagem **orientada a objetos**.
+Este projeto foi desenvolvido de forma incremental, registrando a evolução do código do estilo **procedural** até uma abordagem **orientada a objetos**.
 
 ## Conceitos Trabalhados
 
@@ -46,11 +45,11 @@ area = RaizQ(p * (p - a) * (p - b) * (p - c))
 - [**v0.1**][1] — Implementação totalmente procedural
 - [**v0.2**][2] — Introdução da classe `Triangulo` com atributos públicos
 - [**v0.3**][3] — Criação de método para o cálculo da área do triângulo
+- [**v0.4**][4] — Sobrescrita do método `ToString` na classe `Triangulo`
 
 ## Objetivo Educacional
 
-Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de
-aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
+Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
 
 Ele serve como material de consulta futura e base para exercícios mais complexos.
 
@@ -59,3 +58,5 @@ Ele serve como material de consulta futura e base para exercícios mais complexo
 [2]: https://github.com/jspneto/csharp-estudos-maior-area-entre-dois-triangulos/tree/v0.2/MaiorAreaTriangulos "v0.2"
 
 [3]: https://github.com/jspneto/csharp-estudos-maior-area-entre-dois-triangulos/tree/v0.3/MaiorAreaTriangulos "v0.3"
+
+[4]: https://github.com/jspneto/csharp-estudos-maior-area-entre-dois-triangulos/tree/v0.4/MaiorAreaTriangulos "v0.4"
