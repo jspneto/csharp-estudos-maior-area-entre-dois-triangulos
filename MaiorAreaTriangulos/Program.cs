@@ -7,7 +7,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        ExemploGeral();
+        //ExemploGeral();
+        ExemploSobrecarga();
     }
 
     static Triangulo CriarTriangulo()
@@ -50,5 +51,21 @@ class Program
         Console.WriteLine(x.ExibirArea());
         Console.WriteLine(y.ExibirArea());
         Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}");
+    }
+
+    static void ExemploSobrecarga()
+    {
+        Console.WriteLine("Entre com o nome do triângulo:");
+        string nome = Console.ReadLine()!;
+        Triangulo x = new Triangulo(nome);
+
+        Triangulo y = CriarTriangulo();
+
+        Console.WriteLine();
+        Console.WriteLine("Exemplo de sobrecarga:");
+        Console.WriteLine();
+        Console.WriteLine(x.ToString());
+        Console.WriteLine();
+        Console.WriteLine(y.ToString());
     }
 }
