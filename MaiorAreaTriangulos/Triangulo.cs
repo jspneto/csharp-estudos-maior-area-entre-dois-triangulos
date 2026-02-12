@@ -17,8 +17,18 @@ class Triangulo
         return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
     }
 
+    public string ExibirArea()
+    {
+        return $"Área de {Nome}: {Area().ToString("F4", CultureInfo.InvariantCulture)} ua";
+    }
+
     public override string ToString()
     {
-        return "Área de " + Nome + ": " + Area().ToString("F4", CultureInfo.InvariantCulture);
+        return $"Triângulo {Nome}\n"
+            + "Lados:"
+            + $"{A.ToString("F4", CultureInfo.InvariantCulture)} uc, "
+            + $"{B.ToString("F4", CultureInfo.InvariantCulture)} uc, "
+            + $"{C.ToString("F4", CultureInfo.InvariantCulture)} uc\n"
+            + $"Área: {Area().ToString("F4", CultureInfo.InvariantCulture)} ua";
     }
 }
