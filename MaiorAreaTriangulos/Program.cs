@@ -11,9 +11,9 @@ class Program
         Triangulo y = CriarTriangulo();
         Triangulo maiorArea = CompararAreas(x, y);
 
-        Console.WriteLine(x.ToString());
-        Console.WriteLine(y.ToString());
-        Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}.");
+        Console.WriteLine(x.ExibirArea());
+        Console.WriteLine(y.ExibirArea());
+        Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}");
     }
 
     static Triangulo CriarTriangulo()
