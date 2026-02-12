@@ -18,17 +18,17 @@ class Program
 
     static Triangulo CriarTriangulo()
     {
-        Triangulo triangulo = new Triangulo();
-        
         Console.WriteLine("Entre com os dados do triângulo:");
         Console.Write("Nome: ");
-        triangulo.Nome = Console.ReadLine()!;
+        string nome = Console.ReadLine()!;
         Console.Write("Lado A: ");
-        triangulo.A = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double a = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
         Console.Write("Lado B: ");
-        triangulo.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double b = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
         Console.Write("Lado C: ");
-        triangulo.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double c = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+
+        Triangulo triangulo = new Triangulo(nome, a, b, c);
 
         return triangulo;
     }
