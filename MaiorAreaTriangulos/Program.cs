@@ -7,13 +7,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Triangulo x = CriarTriangulo();
-        Triangulo y = CriarTriangulo();
-        Triangulo maiorArea = CompararAreas(x, y);
-
-        Console.WriteLine(x.ExibirArea());
-        Console.WriteLine(y.ExibirArea());
-        Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}");
+        ExemploGeral();
     }
 
     static Triangulo CriarTriangulo()
@@ -46,5 +40,15 @@ class Program
         {
             return t2;
         }
+    }
+    static void ExemploGeral()
+    {
+        Triangulo x = CriarTriangulo();
+        Triangulo y = CriarTriangulo();
+        Triangulo maiorArea = CompararAreas(x, y);
+
+        Console.WriteLine(x.ExibirArea());
+        Console.WriteLine(y.ExibirArea());
+        Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}");
     }
 }
