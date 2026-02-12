@@ -11,6 +11,15 @@ class Triangulo
     public double B;
     public double C;
 
+    
+    public Triangulo(string nome)
+    {
+        Nome = nome;
+        A = 3.0;
+        B = 4.0;
+        C = 5.0;
+    }
+
     public Triangulo(string nome, double a, double b, double c)
     {
         Nome = nome;
@@ -33,7 +42,7 @@ class Triangulo
     public override string ToString()
     {
         return $"Triângulo {Nome}\n"
-            + "Lados:"
+            + "Lados: "
             + $"{A.ToString("F4", CultureInfo.InvariantCulture)} uc, "
             + $"{B.ToString("F4", CultureInfo.InvariantCulture)} uc, "
             + $"{C.ToString("F4", CultureInfo.InvariantCulture)} uc\n"
