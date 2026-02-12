@@ -6,10 +6,18 @@ namespace MaiorAreaTriangulos;
 class Triangulo
 {
     
-    public string Nome = "XYZ";
+    public string Nome;
     public double A;
     public double B;
     public double C;
+
+    public Triangulo(string nome, double a, double b, double c)
+    {
+        Nome = nome;
+        A = a;
+        B = b;
+        C = c;
+    }
 
     public double Area()
     {
