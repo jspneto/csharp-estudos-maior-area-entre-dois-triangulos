@@ -13,7 +13,7 @@ static class TrianguloExemplos
 
         Console.WriteLine(x.ExibirArea());
         Console.WriteLine(y.ExibirArea());
-        Console.WriteLine($"Triângulo com maior área: {maiorArea.GetNome()}");
+        Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}");
     }
 
     static public void ExemploSobrecarga()
@@ -38,10 +38,10 @@ static class TrianguloExemplos
         Triangulo x = new Triangulo(nome);
 
         Console.WriteLine();
-        Console.WriteLine($"Nome: {x.GetNome()}");
-        Console.WriteLine($"Lado A: {x.GetA().ToString("F4", CultureInfo.InvariantCulture)}");
-        Console.WriteLine($"Lado B: {x.GetB().ToString("F4", CultureInfo.InvariantCulture)}");
-        Console.WriteLine($"Lado C: {x.GetC().ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Nome: {x.Nome}");
+        Console.WriteLine($"Lado A: {x.A.ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado B: {x.B.ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado C: {x.C.ToString("F4", CultureInfo.InvariantCulture)}");
 
         Console.WriteLine();
         Console.Write("Digite um novo nome:");
@@ -53,10 +53,10 @@ static class TrianguloExemplos
         Console.Write("Digite uma nova medida para C: ");
         double c = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
 
-        x.SetNome(nome);
-        x.SetA(a);
-        x.SetB(b);
-        x.SetC(c);
+        x.Nome = nome;
+        x.A = a;
+        x.B = b;
+        x.C = c;
 
         Console.WriteLine();
         Console.WriteLine("Triangulo atualizado:");

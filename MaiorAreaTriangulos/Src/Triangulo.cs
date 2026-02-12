@@ -27,59 +27,71 @@ class Triangulo
         _c = c;
     }
 
-    public string GetNome()
-    {
-        return _nome;
-    }
-
-    public void SetNome(string nome)
-    {
-        if (nome != null && nome.Length >= 3)
-        {
-            _nome = nome;
-        }
-    }
-
-    public double GetA()
-    {
-        return _a;
-    }
-
-    public void SetA(double a)
-    {
-        if (a > 0.0)
-        {
-            _a = a;
-        }
-    }
-
-    public double GetB()
-    {
-        return _b;
-    }
-
-    public void SetB(double b)
-    {
-        if (b > 0.0)
-        {
-            _b = b;
-        }
-    }
-
-    public double GetC()
-    {
-        return _c;
-    }
-
-    public void SetC(double c)
-    {
-        if (c > 0.0)
-        {
-            _c = c;
-        }
-    }
-
     public Triangulo(string nome) : this(nome, 3.0, 4.0, 5.0) { }
+
+    public string Nome
+    {
+        get
+        {
+            return _nome;
+        }
+
+        set
+        {
+            if (value != null && value.Length >= 3)
+            {
+                _nome = value;
+            }
+        }
+    }
+
+    public double A
+    {
+        get
+        {
+            return _a;
+        }
+
+        set
+        {
+            if (value > 0.0)
+            {
+                _a = value;
+            }
+        }
+    }
+
+    public double B
+    {
+        get
+        {
+            return _b;
+        }
+
+        set
+        {
+            if (value > 0.0)
+            {
+                _b = value;
+            }
+        }
+    }
+
+    public double C
+    {
+        get
+        {
+            return _c;
+        }
+
+        set
+        {
+            if (value > 0.0)
+            {
+                _c = value;
+            }
+        }
+    }
 
     public double Area()
     {
