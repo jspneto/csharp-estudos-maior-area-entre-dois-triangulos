@@ -8,7 +8,8 @@ class Program
     static void Main(string[] args)
     {
         //ExemploGeral();
-        ExemploSobrecarga();
+        //ExemploSobrecarga();
+        ExemploEncapsulamento();
     }
 
     static Triangulo CriarTriangulo()
@@ -67,5 +68,38 @@ class Program
         Console.WriteLine(x.ToString());
         Console.WriteLine();
         Console.WriteLine(y.ToString());
+    }
+
+    static void ExemploEncapsulamento()
+    {
+        Console.WriteLine("Entre com o nome do triângulo:");
+        string nome = Console.ReadLine()!;
+        Triangulo x = new Triangulo(nome);
+
+        Console.WriteLine();
+        Console.WriteLine($"Nome: {x.GetNome()}");
+        Console.WriteLine($"Lado A: {x.GetA().ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado B: {x.GetB().ToString("F4", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Lado C: {x.GetC().ToString("F4", CultureInfo.InvariantCulture)}");
+
+        Console.WriteLine();
+        Console.Write("Digite um novo nome:");
+        nome = Console.ReadLine()!;
+        Console.Write("Digite uma nova medida para A: ");
+        double a = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Digite uma nova medida para B: ");
+        double b = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Digite uma nova medida para C: ");
+        double c = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+
+        x.SetNome(nome);
+        x.SetA(a);
+        x.SetB(b);
+        x.SetC(c);
+
+        Console.WriteLine();
+        Console.WriteLine("Triangulo atualizado:");
+        Console.WriteLine();
+        Console.WriteLine(x.ToString());
     }
 }
