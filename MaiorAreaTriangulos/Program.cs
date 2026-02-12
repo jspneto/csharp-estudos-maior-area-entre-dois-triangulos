@@ -50,7 +50,7 @@ class Program
 
         Console.WriteLine(x.ExibirArea());
         Console.WriteLine(y.ExibirArea());
-        Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}");
+        Console.WriteLine($"Triângulo com maior área: {maiorArea.GetNome()}");
     }
 
     static void ExemploSobrecarga()
