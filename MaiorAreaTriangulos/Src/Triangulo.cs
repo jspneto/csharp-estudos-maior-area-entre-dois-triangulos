@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace MaiorAreaTriangulos;
+namespace MaiorAreaTriangulos.Src;
 
 class Triangulo
 {
