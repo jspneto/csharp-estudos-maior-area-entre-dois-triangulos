@@ -7,34 +7,44 @@ class Program
 {
     static void Main(string[] args)
     {
-        Triangulo x, y;
-
-        x = new Triangulo();
-        x.Nome = "X";
-        y = new Triangulo();
-        y.Nome = "Y";
-
-        Console.WriteLine("Entre com as medidas do triângulo " + x.Nome + ":");
-        x.A = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        x.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        x.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-
-        Console.WriteLine("Entre com as medidas do triângulo " + y.Nome + ":");
-        y.A = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        y.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        y.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Triangulo x = CriarTriangulo();
+        Triangulo y = CriarTriangulo();
+        Triangulo maiorArea = CompararAreas(x, y);
 
         Console.WriteLine(x.ToString());
         Console.WriteLine(y.ToString());
-        Console.Write("Maior área: ");
+        Console.WriteLine($"Triângulo com maior área: {maiorArea.Nome}.");
+    }
 
-        if (x.Area() >= y.Area())
+    static Triangulo CriarTriangulo()
+    {
+        Triangulo triangulo = new Triangulo();
+        
+        Console.WriteLine("Entre com os dados do triângulo:");
+        Console.Write("Nome: ");
+        triangulo.Nome = Console.ReadLine()!;
+        Console.Write("Lado A: ");
+        triangulo.A = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Lado B: ");
+        triangulo.B = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Lado C: ");
+        triangulo.C = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+
+        return triangulo;
+    }
+
+    static Triangulo CompararAreas(Triangulo t1, Triangulo t2)
+    {
+        double st1 = t1.Area();
+        double st2 = t2.Area();
+        
+        if (st1 >= st2)
         {
-            Console.WriteLine(x.Nome);
+            return t1;
         }
         else
         {
-            Console.WriteLine(y.Nome);
+            return t2;
         }
     }
 }
