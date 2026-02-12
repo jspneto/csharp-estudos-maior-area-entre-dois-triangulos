@@ -12,14 +12,6 @@ class Triangulo
     public double C;
 
     
-    public Triangulo(string nome)
-    {
-        Nome = nome;
-        A = 3.0;
-        B = 4.0;
-        C = 5.0;
-    }
-
     public Triangulo(string nome, double a, double b, double c)
     {
         Nome = nome;
@@ -27,6 +19,8 @@ class Triangulo
         B = b;
         C = c;
     }
+
+    public Triangulo(string nome) : this(nome, 3.0, 4.0, 5.0) { }
 
     public double Area()
     {
